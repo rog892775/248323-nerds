@@ -6,11 +6,11 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <div class="logo">
-          <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип">
-        </div>
+      <div class="container clearfix">
         <nav class="main-navigation">
+		  <div class="logo">
+            <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип">
+          </div>
           <ul>
             <li>
               <a href="#">Студия</a>
@@ -26,22 +26,25 @@
             </li>
           </ul>
         </nav>
-      <div class="user-block">
+        <div class="user-block">
           <img src="img/cart-icon.png" width="15" height="15" alt="Корзина">
           <a class="basket" href="#">Корзина</a>
-          <h1 class="title">Магазин готовых шаблонов</h1>
-      </div>
-     </div>
+	    </div>
+	    <div class="title">
+          <h1>Магазин готовых шаблонов</h1>
+        </div>
+       </div>
     </header>
-    <main class="container">
-        <form action="https://echo.htmlacademy.ru" method="post">
+    <main class="container clearfix">
+      <form action="https://echo.htmlacademy.ru" method="post">
+	    <section class="slots">
             <div class="cost">
                 <b class="section">Стоимость:</b>
                 <img src="img/slider-round-copy.png" width="260" height="75" alt="Ценовой слайдер">
                 <p>от <span>0</span> до <span>15 000</span></p>
             </div>
           <fieldset>
-		    <legend class="index-content-title">Сетка:</legend>
+		    <legend class="content-title-1">Сетка:</legend>
               <label>
 				<img src="img/radio-on.png" width="25" height="20" alt="radio-on">
 			    <input type="radio" name="choice" value="1" checked>Адаптивная
@@ -56,7 +59,7 @@
 	          </label>
 		  </fieldset>
 		  <fieldset>
-		    <legend class="index-content-title">Особенности:</legend>
+		    <legend class="content-title-2">Особенности:</legend>
               <label>
 				<img src="img/checkbox-on.png" width="25" height="20" alt="checkbox-on">
 			    <input type="checkbox" name="subscribe-1" checked>Слайдер
@@ -79,10 +82,11 @@
 			  </label>
 		  </fieldset>
 		  <button class="show" type="button">Показать</button>
+		  </section>
         </form>
-        <section class="templates">
-			<div class="cost">
-                <b class="section">Сортировать:</b>
+        <section class="templates clearfix">
+			<div class="sort">
+                <b class="sorting">Сортировать:</b>
 				<p class="sort-black">По цене</p>
 				<p class="sort-gray">По типу</p>
 				<p class="sort-gray">По названию</p>
@@ -101,22 +105,47 @@
             <article class="template">
 				<img src="img/browser.png" width="360" height="35" alt="header">
                 <img src="img/img-pink.jpg" width="370" height="575" alt="Pink">
+				<div class="info">
+                    <b class="subtext">Pink App</b>
+                    <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+                    <p>9 900 руб.</p>
+                </div>
             </article>
             <article class="template">
 				<img src="img/browser.png" width="360" height="35" alt="header">
                 <img src="img/img-barbershop.jpg" width="370" height="575" alt="Borodinski">
+				<div class="info">
+                    <b class="subtext">Barbershop</b>
+                    <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
+                    <p>9 900 руб.</p>
+                </div>
             </article>
             <article class="template">
 				<img src="img/browser.png" width="360" height="35" alt="header">
                 <img src="img/img-mishka.jpg" width="370" height="575" alt="Mishka">
+				<div class="info">
+                    <b class="subtext">Mishka</b>
+                    <p>Интернет-магазин<br> вязаных игрушек</p>
+                    <p>9 900 руб.</p>
+                </div>
             </article>
             <article class="template">
 				<img src="img/browser.png" width="360" height="35" alt="header">
                 <img src="img/img-mishka.jpg" width="370" height="575" alt="aplus">
+				<div class="info">
+                    <b class="subtext">A Plus</b>
+                    <p>Лендинг курсов повышения<br> квалификации</p>
+                    <p>9 900 руб.</p>
+                </div>
             </article>
             <article class="template">
 				<img src="img/browser.png" width="360" height="35" alt="header">
                 <img src="img/img-kvast.jpg" width="370" height="575" alt="kvast">
+				<div class="info">
+                    <b class="subtext">Кваст</b>
+                    <p>Промо-сайт производителя<br> крафтового кваса</p>
+                    <p>9 900 руб.</p>
+                </div>
             </article>
         </section>
         <div class="content-bottom">
@@ -127,9 +156,11 @@
         </div>
     </main>
     <footer class="main-footer">
-        <div class="container">
-            <section class="footer-map">
+        <div class="container clearfix">
+            <section class="Nerd's-map">
                 <img src="img/map.png" width="1440" height="415" alt="Nёrd's map">
+			</section>
+			<section class="Nerds-marker">
 				<img src="img/map-marker.png" width="230" height="190" alt="Nёrd's marker">
             </section>
             <section class="footer-contacts">
