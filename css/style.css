@@ -24,16 +24,13 @@ h2 {
  	display: table;
  	clear: both;
  }
+ .main-header {
+	background-color: #eeeeee;
+ }
  .container {
 	width: 1160px;
 	margin-left: auto;
 	margin-right: auto;
- }
- .top-title {
-	background-color: #eeeeee;
- }
- .bottom-title {
-	background-color: #eeeeee;
  }
  .logo {
 	float: left;
